@@ -49,14 +49,14 @@ read only = no
 valid users = SEU_USUARIO
 ```
 
-4 - No arquivo `smb.conf`, substitua:
+4 - **No arquivo `smb.conf`, substitua:**
 
 - "nomeasuaescolha" por qualquer nome que você queira;
 - "Comentário à sua escolha" por qualquer comentário;
 - "SEU_USUARIO" pelo seu nome de usuário do PC Linux;
 - "/home/SEU_USUARIO/compartilhado" pelo diretório do PC Linux que você deseja compartilhar.
 
-6 - **Reinicie e verifique o serviço do Samba:**
+5 - **Reinicie e verifique o serviço do Samba:**
 
 ```
 sudo systemctl restart smbd
@@ -65,7 +65,7 @@ sudo systemctl status smbd
 
 *Certifique-se de que o status exibe `active (running)`.*
 
-7 - No terminal do Debian, execute o comando abaixo para obter o IP local:
+6 - **No terminal do Debian, execute o comando abaixo para obter o IP local:**
 
 ```
 hostname -I
