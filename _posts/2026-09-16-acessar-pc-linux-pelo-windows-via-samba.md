@@ -90,7 +90,7 @@ Anote o endereço retornado (exemplo: `192.168.1.100`).
   sudo chown -R SEU_USUARIO:SEU_USUARIO /home/SEU_USUARIO/compartilhado
   ```
 - **Firewall Bloqueando a Conexão:**
-  Se estiver usando o `ufw` no Debian, libere as portas do Samba:
+  Se estiver usando o `ufw` no Linux, libere as portas do Samba:
   ```bash
   sudo ufw allow samba
   ```
