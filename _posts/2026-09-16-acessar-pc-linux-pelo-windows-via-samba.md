@@ -1,3 +1,11 @@
+---
+layout: post
+title: "Como Acessar um PC Linux via Samba no Windows 11"
+date: 2026-09-16
+categories: [tutoriais, redes]
+tags: [samba, windows, linux, debian]
+---
+
 # Como Acessar um PC Linux via Samba no Windows 11
 
 Este guia passo a passo explica como configurar um compartilhamento de rede utilizando o **Samba** em um servidor Debian e acessá-lo a partir do **Windows 11**. 
