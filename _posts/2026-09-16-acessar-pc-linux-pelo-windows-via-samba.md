@@ -6,6 +6,7 @@ read_time: true
 share: true
 related: true
 classes: wide
+author_profile: true
 ---
 
 Este guia passo a passo explica como configurar um compartilhamento de rede utilizando o **Samba** em um servidor Debian e acessá-lo a partir do **Windows 11**. 
