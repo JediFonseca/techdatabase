@@ -1,3 +1,7 @@
-theme: minima
 title: Tech Database
 description: Base de dados pessoal de informações sobre TI.
+remote_theme: jekyll/minima
+plugins:
+  - jekyll-remote-theme
+minima:
+  skin: dark
