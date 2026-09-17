@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Como Acessar um PC Linux via Samba no Windows 11"
 date: 2026-09-16
 categories: [tutoriais, redes]
