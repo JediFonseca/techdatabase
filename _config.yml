@@ -5,3 +5,11 @@ minimal_mistakes_skin: "dark"
 search: true
 plugins:
   - jekyll-include-cache
+author:
+  name: "Jedi Fonseca"
+  avatar: "/assets/images/avatar.jpg"
+  bio: "Estudante de Mecânica de Manutenção de Aeronaves, entusiasta de TI, F1 e aviação. Keep the blue side up!"
+  links:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/jedifonseca/"
