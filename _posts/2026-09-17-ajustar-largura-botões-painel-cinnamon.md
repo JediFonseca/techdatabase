@@ -24,7 +24,7 @@ Nesse artigo, vamos ver como alterar a largura desses botões para qualquer tama
 02 - Encontre a pasta do tema em uso, que normalmente fica em `/usr/share/themes` ou `~/.local/share/themes` para temas instalados pelo usuário.
 
 03 - Dentro da pasta do tema em uso, abra o arquivo chamado `cinnamon.css`. Você precisará ser root/usar `sudo` para modificar arquivos em 
-`/usr/share/themes`. Recomendo utilizar o editor de textos `xed`, padrão do Linux Mint, executado como `root` rodando `sudo xed`no terminal.
+`/usr/share/themes`. Recomendo utilizar o editor de textos `xed`, padrão do Linux Mint, executado como `root` rodando `sudo xed` no terminal.
 
 04 - Dentro do `cinnamon.css`, procure pela sessão `.grouped-window-list-item-box`.
 
