@@ -15,7 +15,7 @@ Alto Desempenho, Equilibrado e etc.).
 Nesse tutorial, vou mostrar como selecionar um modo específico, à sua escolha, de forma persistente no Linux.
 
 Como existem muitas distros Linux, utilizarei o Debian 13 como exemplo. Se você utiliza outras distros, precisará adaptar os nomes e
-o gerenciador de pacotes. Para isso você pode, por exemplo, copiar um comando desse tutorial e poerguntar ao Google, ou a alguma IA,
+o gerenciador de pacotes. Para isso você pode, por exemplo, copiar um comando desse tutorial e perguntar ao Google, ou a alguma IA,
 qual é o equivalente desse comando para a sua distro.
 
 ## Selecionando o modo do CPU Governor
@@ -28,7 +28,7 @@ Primeiro, verifique se o `cpupower` já está instalado no seu sistema:
 command -v cpupower
 ```
 
-Se o comando acima retornar um caminho como `/usr/bin/cpupower`, significa que já está instalado. Nesse caso, pule para o passo 02. Se
+Se o comando acima retornar um caminho como `/usr/bin/cpupower`, significa que já está instalado. Nesse caso, pule para o passo 2. Se
 o comando não retornar nada, então instale o `cpupower`:
 
 ```
