@@ -20,8 +20,16 @@ qual é o equivalente desse comando para a sua distro.
 
 ## Selecionando o modo do CPU Governor
 
-### 1 - A primeira coisa a se fazer é instalar o pacote responsável por fornecer a ferramenta "cpupower",
-que utilizaremos para selecionar o modo do CPU Governor desejado. Para isso, rode:
+### 1 - Instalando o "cpupower"
+
+Primeiro, verifique se o `cpupower` já está instalado no seu sistema:
+
+```
+command -v cpupower
+```
+
+Se o comando acima retornar um caminho como `/usr/bin/cpupower`, significa que já está instalado. Nesse caso, pule para o passo 02. Se
+o comando não retornar nada, então instale o `cpupower`:
 
 ```
 sudo apt install linux-cpupower
@@ -33,7 +41,7 @@ sudo apt install linux-cpupower
 cpupower frequency-info | grep -E "disponíveis|available"
 ```
 
-O comando acima irá retornar a frase ` reguladores do cpufreq disponíveis:` seguida pela lista com os nomes
+O comando acima irá retornar a frase `reguladores do cpufreq disponíveis:` seguida pela lista com os nomes
 dos perfis que você pode utilizar. Para o exemplo deste tutorial, utilizaremos `performance`, mas outras opções
 como `on-demand` e `powersave` também costumam estar disponíveis.
 
