@@ -49,7 +49,7 @@ New-NetFirewallRule -Name sshd -DisplayName 'OpenSSH SSH Server' -Enabled True -
 ssh usuario@IP_DO_WINDOWS
 ```
 
-### Passo opcional
+### Passo opcional 01
 
 Se você quiser fazer login no Windows automaticamente (sem pedir senha) e ao mesmo tempo manter a senha do usuário que possibilida
 o uso so SSH, siga esses 3 passos.
@@ -92,6 +92,14 @@ Desfaça o passo 03:
 
 ```
 reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /v DefaultUsername /f
+```
+
+### Passo opcional 02
+
+Se quiser que o SSH acesse diretamente o PowerShell ao invés do CMD, rode ocomando abaixo para tornar o PowerShell o novo padrão:
+
+```
+New-ItemProperty -Path "HKLM:\SOFTWARE\OpenSSH" -Name DefaultShell -Value "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -PropertyType String -Force
 ```
 
 ### IMPORTANTE
