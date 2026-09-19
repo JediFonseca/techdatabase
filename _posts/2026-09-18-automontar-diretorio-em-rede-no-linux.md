@@ -15,6 +15,13 @@ como se fizesse parte do sistema local.
 
 Vou utilizar o Debian 13 como base para este tutorial. Se você utiliza outra distro, precisará adaptar os procedimentos de acordo.
 
+Para que esse procedimento funciona, o pacote "openssh-server" deverá estar instalado, e o
+serviço "sshd" deverá estar habilitado e rodando no PC remoto. Você pode verificar o status com o comando abaixo:
+
+```
+systemctl status sshd
+```
+
 ## Instalando o SSHFS
 
 Primeiro vamos instalar o "sshfs", a ferramenta que faz tudo isso acontecer.
