@@ -46,7 +46,7 @@ ssh usuario@IP_DO_WINDOWS
 ### Passo opcional 01
 
 Você precisará de uma senha configurada para o seu usuário do Windows para poder acessá-lo via SSH. Se você quiser fazer 
-login no Windows automaticamente (sem pedir senha) e ao mesmo tempo manter a senha do usuário que possibilida o uso so SSH, siga esses 3 passos.
+login no Windows automaticamente (sem pedir senha) e ao mesmo tempo manter a senha do usuário que possibilita o uso so SSH, siga esses 3 passos.
 
 01 - Rode o comando abaixo para alterar a chave do Windows Auto Logon no registro:
 
@@ -90,7 +90,7 @@ reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /v Defau
 
 ### Passo opcional 02
 
-Se quiser que o SSH acesse diretamente o PowerShell ao invés do CMD, rode ocomando abaixo para tornar o PowerShell o novo padrão:
+Se quiser que o SSH acesse diretamente o PowerShell ao invés do CMD, rode o comando abaixo para tornar o PowerShell o novo padrão:
 
 ```
 New-ItemProperty -Path "HKLM:\SOFTWARE\OpenSSH" -Name DefaultShell -Value "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -PropertyType String -Force
@@ -99,7 +99,7 @@ New-ItemProperty -Path "HKLM:\SOFTWARE\OpenSSH" -Name DefaultShell -Value "C:\Wi
 ### Passo opcional 03
 
 O SSH irá utilizar a porta 22 para se comunicar com os outros dispositivos. Se o SSH não estiver conseguindo acessar o seu Windows
-à partir de outro dispositivo - é possível que a instalação não tenha criado automaticamente uma regra de Firewall. Se for esse o
+a partir de outro dispositivo - é possível que a instalação não tenha criado automaticamente uma regra de Firewall. Se for esse o
 caso, você pode utilizar o comando abaixo para criar essa regra:
 
 ```
