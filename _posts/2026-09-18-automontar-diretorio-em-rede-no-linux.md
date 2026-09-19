@@ -107,3 +107,5 @@ Reinicie o PC e pronto. O sistema de arquivos do dispositivo remoto deverá esta
 
 Agora, basta adicionar essa pasta como um atalho/favorito na barra lateral do gerenciador de arquivos e você terá acesso
 automático e facilitado a toda a árvore de diretórios do PC remoto.
+
+[thumbnail credits](https://www.flaticon.com/free-icons/file-sharing)
