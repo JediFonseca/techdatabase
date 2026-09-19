@@ -55,7 +55,7 @@ errorfilelocation="$HOME/sftp_did_not_mount"         	  # Localização do indic
 
 # Execução:
 
-sleep 10 # Os "sleeps" serve para dar tempo do Tailscale iniciar, caso esteja sendo utilizado.
+sleep 10 # Os "sleeps" servem para dar tempo do Tailscale iniciar, caso esteja sendo utilizado.
 
 mkdir -p "$mymountpoint"
 
