@@ -7,6 +7,8 @@ share: true
 related: true
 classes: wide
 author_profile: true
+header:
+  teaser: /assets/images/2026-09-18-automontar-diretorio-em-rede-no-linux.jpg
 ---
 
 Esse tutorial irá mostrar como ativar a montagem automática de um diretório em rede no Linux utilizando a ferramenta `sshfs`. Isso irá
