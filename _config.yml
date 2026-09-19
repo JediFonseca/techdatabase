@@ -1,5 +1,6 @@
 title: Tech Database
 description: Base de dados pessoal de informações sobre TI.
+locale: "pt-BR"
 remote_theme: "JediFonseca/minimal-mistakes@4.28.1"
 minimal_mistakes_skin: "dark"
 search: true
