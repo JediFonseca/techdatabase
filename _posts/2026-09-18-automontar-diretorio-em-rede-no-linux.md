@@ -38,9 +38,9 @@ Agora, crie (se não existir) a pasta na qual o nosso script precisará ficar pa
 mkdir -p "$HOME/.local/bin"
 ```
 
-Copie e cole o código abaixo em um editor de texto e salve-o com o nome `sftp_automount.service` na pasta que você acabou de criar.
+Copie e cole o código abaixo em um editor de texto e salve-o com o nome `sftp_automount` na pasta que você acabou de criar.
 
-**ATENÇÃO:** Substitua os valores das 4 vaiáveis de acordo com as informações correspondentes para o seu caso de uso. Em caso de
+**ATENÇÃO:** Substitua os valores das 4 variáveis de acordo com as informações correspondentes para o seu caso de uso. Em caso de
 dúvidas, leia atenciosamente os comentários do script abaixo.
 
 ```
@@ -66,6 +66,12 @@ if [[ $? != 0 ]]; then
 fi
 ```
 
+Dê ao `sftp_automount` permissões de execução:
+
+```
+sudo chmod +x "$HOME/.local/bin/sftp_automount
+```
+
 ## Criando e ativando o serviço no systemd
 
 Por fim, crie um serviço do systemd para que o script rode automaticamente toda vez que o PC iniciar. Para isso, cole
@@ -73,7 +79,7 @@ o conteúdo abaixo em um editor de textos:
 
 ```
 [Unit]
-Description=Monitor de conexão e reboot automático
+Description=Automontagem de diretórios remotos com SSHFS
 
 [Service]
 ExecStart=%h/.local/bin/sftp_automount
