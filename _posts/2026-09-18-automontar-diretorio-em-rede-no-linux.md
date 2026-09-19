@@ -15,7 +15,7 @@ como se fizesse parte do sistema local.
 
 Vou utilizar o Debian 13 como base para este tutorial. Se você utiliza outra distro, precisará adaptar os procedimentos de acordo.
 
-Para que esse procedimento funciona, o pacote `openssh-server` deverá estar instalado, e o
+Para que esse procedimento funcione, o pacote `openssh-server` deverá estar instalado, e o
 serviço `sshd` deverá estar habilitado e rodando no PC remoto. Você pode verificar o status com o comando abaixo:
 
 ```
@@ -69,12 +69,12 @@ fi
 Dê ao `sftp_automount` permissões de execução:
 
 ```
-sudo chmod +x "$HOME/.local/bin/sftp_automount"
+chmod +x "$HOME/.local/bin/sftp_automount"
 ```
 
 ## Criando e ativando o serviço no systemd
 
-Por fim, crie um serviço do systemd para que o script rode automaticamente toda vez que o PC iniciar. Para isso, cole
+Por fim, crie um serviço do systemd para que o script rode automaticamente toda vez que o seu usuário logar. Para isso, cole
 o conteúdo abaixo em um editor de textos:
 
 ```
@@ -101,7 +101,7 @@ o comando abaixo para ativar e habilitar o serviço:
 systemctl --user enable --now sftp_automount.service
 ```
 
-Reinicie o PC e pronto. O sistema de arquivos do dispositivo remoto devera estar montado na pasta que você escolheu.
+Reinicie o PC e pronto. O sistema de arquivos do dispositivo remoto deverá estar montado na pasta que você escolheu.
 
 Agora, basta adicionar essa pasta como um atalho/favorito na barra lateral do gerenciador de arquivos e você terá acesso
-automático e facilitado à toda a árvore de diretórios do PC remoto.
+automático e facilitado a toda a árvore de diretórios do PC remoto.
