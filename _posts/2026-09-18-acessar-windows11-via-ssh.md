@@ -45,7 +45,7 @@ ssh usuario@IP_DO_WINDOWS
 
 ### Passo opcional 01
 
-Você precisará de uma senha configurada para o seu usuário do Windows para poder acessá-lo via SSH.Se você quiser fazer 
+Você precisará de uma senha configurada para o seu usuário do Windows para poder acessá-lo via SSH. Se você quiser fazer 
 login no Windows automaticamente (sem pedir senha) e ao mesmo tempo manter a senha do usuário que possibilida o uso so SSH, siga esses 3 passos.
 
 01 - Rode o comando abaixo para alterar a chave do Windows Auto Logon no registro:
