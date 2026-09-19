@@ -50,8 +50,8 @@ dúvidas, leia atenciosamente os comentários do script abaixo.
 
 userip="username@192.168.100.1" 		          # Usuário e IP do dispositivo remoto.
 mymountpoint="$HOME/.mnt/NAS" 			          # Diretório no PC local onde o sistema de arquivos remoto será montado.
-mymountsource="/" 				                  # Diretório do dispositivo remoto que será montado no PC local.
-errorfilelocation="$HOME/sftp_did_not_mount" 	  # Localização do indicador de erro no PC local.
+mymountsource="/" 				          # Diretório do dispositivo remoto que será montado no PC local.
+errorfilelocation="$HOME/sftp_did_not_mount"         	  # Localização do indicador de erro no PC local.
 
 # Execução:
 
