@@ -9,14 +9,14 @@ classes: wide
 author_profile: true
 ---
 
-Esse tutorial irá mostrar como ativar a montagem automática de um diretório em rede no Linux utilizando a ferramenta "sshfs". Isso irá
+Esse tutorial irá mostrar como ativar a montagem automática de um diretório em rede no Linux utilizando a ferramenta `sshfs`. Isso irá
 permitir que o seu sistema operacional e todos os apps rodando nele possam interagir com a árvore de diretórios do sistema remoto
 como se fizesse parte do sistema local.
 
 Vou utilizar o Debian 13 como base para este tutorial. Se você utiliza outra distro, precisará adaptar os procedimentos de acordo.
 
-Para que esse procedimento funciona, o pacote "openssh-server" deverá estar instalado, e o
-serviço "sshd" deverá estar habilitado e rodando no PC remoto. Você pode verificar o status com o comando abaixo:
+Para que esse procedimento funciona, o pacote `openssh-server` deverá estar instalado, e o
+serviço `sshd` deverá estar habilitado e rodando no PC remoto. Você pode verificar o status com o comando abaixo:
 
 ```
 systemctl status sshd
@@ -24,7 +24,7 @@ systemctl status sshd
 
 ## Instalando o SSHFS
 
-Primeiro vamos instalar o "sshfs", a ferramenta que faz tudo isso acontecer.
+Primeiro vamos instalar o `sshfs`, a ferramenta que faz tudo isso acontecer.
 
 ```
 sudo apt install sshfs
@@ -69,7 +69,7 @@ fi
 Dê ao `sftp_automount` permissões de execução:
 
 ```
-sudo chmod +x "$HOME/.local/bin/sftp_automount
+sudo chmod +x "$HOME/.local/bin/sftp_automount"
 ```
 
 ## Criando e ativando o serviço no systemd
