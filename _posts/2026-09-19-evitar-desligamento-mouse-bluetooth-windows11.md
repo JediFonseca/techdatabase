@@ -16,11 +16,11 @@ de uso no Windows 11, mas - teoricamente - pode funcionar também com dispositiv
 
 1. Win + X → Gerenciador de Dispositivos
 2. Expanda Bluetooth
-3. Abra as propriedades do adaptador Bluetooth (não do mouse).
+3. Abra as propriedades do adaptador Bluetooth (não do dispositivo).
 4. Aba Gerenciamento de Energia.
 5. Desmarque “Permitir que o computador desligue este dispositivo para economizar energia”.
 
-## Desative temporariamente a suspensão seletiva de USB
+## Desative a suspensão seletiva de USB
 
 Isso é especialmente importante se seu Bluetooth for integrado por USB internamente ou se você estiver usando um dongle.
 
