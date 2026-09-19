@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Como acessar o Windows 11 à partir do Linux via SSH"
-date: 2026-09-16
+date: 2026-09-18
 read_time: true
 share: true
 related: true
