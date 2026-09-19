@@ -51,8 +51,8 @@ ssh usuario@IP_DO_WINDOWS
 
 ### Passo opcional 01
 
-Se você quiser fazer login no Windows automaticamente (sem pedir senha) e ao mesmo tempo manter a senha do usuário que possibilida
-o uso so SSH, siga esses 3 passos.
+Você precisará de uma senha configurada para o seu usuário do Windows para poder acessá-lo via SSH.Se você quiser fazer 
+login no Windows automaticamente (sem pedir senha) e ao mesmo tempo manter a senha do usuário que possibilida o uso so SSH, siga esses 3 passos.
 
 01 - Rode o comando abaixo para alterar a chave do Windows Auto Logon no registro:
 
@@ -104,6 +104,5 @@ New-ItemProperty -Path "HKLM:\SOFTWARE\OpenSSH" -Name DefaultShell -Value "C:\Wi
 
 ### IMPORTANTE
 
-- Você precisará de uma senha configurada para o seu usuário do Windows para poder acessá-lo via SSH.
 - Para saber qual é o nome de usuário correto para acessar o Windows via SSH, abra o PowerShell e verifique qual nome aparece no prompt. Esse é o seu
 nome de usuário. Se esse nome contiver espaços, utilize aspas no comando de acesso do ssh. Exemplo: `ssh "nome sobrenome@192.168.100.1"`.
