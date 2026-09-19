@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Como acessar o Windows 11 à partir do Linux via SSH"
+title: "Como acessar o Windows 11 a partir do Linux via SSH"
 date: 2026-09-18
 read_time: true
 share: true
@@ -9,7 +9,7 @@ classes: wide
 author_profile: true
 ---
 
-Esse tutorial irá mostrar como acessar o PowerShell do Windows 11 à partir de uma distro Linux ou do Android utilizando SSH.
+Esse tutorial irá mostrar como acessar o PowerShell do Windows 11 a partir de uma distro Linux ou do Android utilizando SSH.
 
 ## Instalar e configurar o OpenSSH Server
 
@@ -37,13 +37,7 @@ Start-Service sshd
 Set-Service -Name sshd -StartupType 'Automatic'
 ```
 
-05 - O SSH irá utilizar a porta 22 para se comunicar com os outros dispositivos. Libere essa porta no Firewall do Windows:
-
-```
-New-NetFirewallRule -Name sshd -DisplayName 'OpenSSH SSH Server' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22
-```
-
-06 - Acesse o PC Windows via SSH de qualquer outro dispositivo da rede local com:
+05 - Acesse o PC Windows via SSH de qualquer outro dispositivo da rede local com:
 
 ```
 ssh usuario@IP_DO_WINDOWS
@@ -85,13 +79,13 @@ reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /v AutoAdmi
 Desfaça o passo 02:
 
 ```
-reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /v DefaultPassword /f
+reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /v DefaultUsername /f
 ```
 
 Desfaça o passo 03:
 
 ```
-reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /v DefaultUsername /f
+reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /v DefaultPassword /f
 ```
 
 ### Passo opcional 02
@@ -102,7 +96,18 @@ Se quiser que o SSH acesse diretamente o PowerShell ao invés do CMD, rode ocoma
 New-ItemProperty -Path "HKLM:\SOFTWARE\OpenSSH" -Name DefaultShell -Value "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -PropertyType String -Force
 ```
 
+### Passo opcional 03
+
+O SSH irá utilizar a porta 22 para se comunicar com os outros dispositivos. Se o SSH não estiver conseguindo acessar o seu Windows
+à partir de outro dispositivo - é possível que a instalação não tenha criado automaticamente uma regra de Firewall. Se for esse o
+caso, você pode utilizar o comando abaixo para criar essa regra:
+
+```
+New-NetFirewallRule -Name sshd -DisplayName 'OpenSSH SSH Server' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22
+```
+
 ### IMPORTANTE
 
 - Para saber qual é o nome de usuário correto para acessar o Windows via SSH, abra o PowerShell e verifique qual nome aparece no prompt. Esse é o seu
-nome de usuário. Se esse nome contiver espaços, utilize aspas no comando de acesso do ssh. Exemplo: `ssh "nome sobrenome@192.168.100.1"`.
+nome de usuário. Para confirmar se o nome está correto, você pode utilizar o comando `whoami` no PoweShell. Se esse nome contiver espaços,
+utilize aspas no comando de acesso do ssh. Exemplo: `ssh "nome sobrenome@192.168.100.1"`.
