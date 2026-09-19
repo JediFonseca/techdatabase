@@ -14,3 +14,6 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/jedifonseca/"
+    - label: "Github"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/JediFonseca"
