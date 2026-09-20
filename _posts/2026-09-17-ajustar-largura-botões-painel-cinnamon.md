@@ -7,6 +7,7 @@ share: true
 related: true
 classes: wide
 author_profile: true
+categories: [linux, personalização]
 ---
 
 O Cinnamon é o desktop environment (popularmente chamado de "interface gráfica") padrão e originária do Linux Mint - embora também seja utilizada em outras distros.
