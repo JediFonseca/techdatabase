@@ -8,6 +8,8 @@ related: true
 classes: wide
 author_profile: true
 categories: [Linux, Personalização]
+header:
+  teaser: /assets/images/thumbnails/2026-09-17-ajustar-largura-botões-painel-cinnamon.jpg
 ---
 
 O Cinnamon é o desktop environment (popularmente chamado de "interface gráfica") padrão e originária do Linux Mint - embora também seja utilizada em outras distros.
