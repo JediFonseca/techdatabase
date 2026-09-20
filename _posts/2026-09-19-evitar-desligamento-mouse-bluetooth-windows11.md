@@ -7,6 +7,7 @@ share: true
 related: true
 classes: wide
 author_profile: true
+categories: [windows]
 ---
 
 Esse procedimento foi testado apenas com um mouse bluetooth que estava sendo desativado de forma automatica após poucos minutos
