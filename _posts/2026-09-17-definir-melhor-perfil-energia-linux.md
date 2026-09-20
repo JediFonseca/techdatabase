@@ -7,6 +7,7 @@ share: true
 related: true
 classes: wide
 author_profile: true
+categories: [linux]
 ---
 
 A configuração do CPU Governor no Linux é - de forma simplificada - o equivalente aos perfis de energia do Windows (Economia de energia,
