@@ -8,6 +8,8 @@ related: true
 classes: wide
 author_profile: true
 categories: [Windows]
+header:
+  teaser: /assets/images/thumbnails/2026-09-17-restaurar-pendrive-etcher-windows..jpg
 ---
 
 Quando o **Balena Etcher** grava uma imagem no pen drive, ele geralmente apaga e recria a tabela de partições, às vezes utilizando formatos não reconhecidos pelo Windows.
