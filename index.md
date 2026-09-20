@@ -1,5 +1,6 @@
 ---
 layout: home
+entries_layout: grid
 sidebar:
   nav: "categorias"
 classes: wide
