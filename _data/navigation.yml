@@ -1,6 +1,6 @@
 categorias:
   - title: "Categorias"
-    url: /categories/#page-title
+    url: /categories/
     children:
       - title: "Linux"
         url: /categories/#linux
