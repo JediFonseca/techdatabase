@@ -2,10 +2,10 @@ categorias:
   - title: "Categorias"
     children:
       - title: "Linux"
-        url: /categories/#Linux
+        url: /categories/#linux
       - title: "Windows"
-        url: /categories/#Windows
+        url: /categories/#windows
       - title: "Redes"
-        url: /categories/#Redes
+        url: /categories/#redes
       - title: "Personalização"
-        url: /categories/#Personalização
+        url: /categories/#personalização
