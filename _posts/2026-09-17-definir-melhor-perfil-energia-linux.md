@@ -8,6 +8,8 @@ related: true
 classes: wide
 author_profile: true
 categories: [Linux]
+header:
+  teaser: /assets/images/thumbnails/2026-09-17-definir-melhor-perfil-energia-linux.jpg
 ---
 
 A configuração do CPU Governor no Linux é - de forma simplificada - o equivalente aos perfis de energia do Windows (Economia de energia,
