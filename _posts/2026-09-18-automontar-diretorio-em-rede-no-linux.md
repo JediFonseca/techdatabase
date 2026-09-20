@@ -7,7 +7,7 @@ share: true
 related: true
 classes: wide
 author_profile: true
-categories: [linux, redes]
+categories: [Linux, Redes]
 ---
 
 Esse tutorial irá mostrar como ativar a montagem automática de um diretório em rede no Linux utilizando a ferramenta `sshfs`. Isso irá
