@@ -8,6 +8,8 @@ related: true
 classes: wide
 author_profile: true
 categories: [Windows]
+header:
+  teaser: /assets/images/thumbnails/2026-09-19-evitar-desligamento-mouse-bluetooth-windows11.jpg
 ---
 
 Esse procedimento foi testado apenas com um mouse bluetooth que estava sendo desativado de forma automatica após poucos minutos
