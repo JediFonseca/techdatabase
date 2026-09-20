@@ -1,6 +1,7 @@
 ---
 layout: home
-author_profile: true
+sidebar:
+  nav: "categorias"
 classes: wide
 header:
   image: /assets/images/header.png
