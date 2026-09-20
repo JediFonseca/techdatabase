@@ -8,6 +8,8 @@ related: true
 classes: wide
 author_profile: true
 categories: [Linux, Windows, Redes]
+header:
+  teaser: /assets/images/thumbnails/2026-09-18-acessar-windows11-via-ssh.jpg
 ---
 
 Esse tutorial irá mostrar como acessar o PowerShell do Windows 11 a partir de uma distro Linux ou do Android utilizando SSH.
