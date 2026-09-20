@@ -1,0 +1,11 @@
+categorias:
+  - title: "Categorias"
+    children:
+      - title: "Linux"
+        url: /categories/#linux
+      - title: "Windows"
+        url: /categories/#windows
+      - title: "Redes"
+        url: /categories/#redes
+      - title: "Personalização"
+        url: /categories/#personalizacao
