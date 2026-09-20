@@ -8,6 +8,8 @@ related: true
 classes: wide
 author_profile: true
 categories: [Linux, Windows, Redes]
+header:
+  teaser: /assets/images/thumbnails/2026-09-16-acessar-pc-linux-pelo-windows-via-samba.jpg
 ---
 
 Este guia passo a passo explica como configurar um compartilhamento de rede utilizando o **Samba** em um servidor Debian e acessá-lo a partir do **Windows 11**. 
