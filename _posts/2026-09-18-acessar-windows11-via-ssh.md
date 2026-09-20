@@ -7,7 +7,7 @@ share: true
 related: true
 classes: wide
 author_profile: true
-categories: [linux, windows, redes]
+categories: [Linux, Windows, Redes]
 ---
 
 Esse tutorial irá mostrar como acessar o PowerShell do Windows 11 a partir de uma distro Linux ou do Android utilizando SSH.
