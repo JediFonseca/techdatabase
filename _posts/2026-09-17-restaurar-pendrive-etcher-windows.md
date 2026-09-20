@@ -7,7 +7,7 @@ share: true
 related: true
 classes: wide
 author_profile: true
-categories: [windows]
+categories: [Windows]
 ---
 
 Quando o **Balena Etcher** grava uma imagem no pen drive, ele geralmente apaga e recria a tabela de partições, às vezes utilizando formatos não reconhecidos pelo Windows.
