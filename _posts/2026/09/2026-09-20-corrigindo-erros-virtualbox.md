@@ -1,13 +1,13 @@
 ---
 layout: single
-title: "Resolvendo problemas com o VirtualBox "
+title: "Resolvendo problemas com o VirtualBox no Linux"
 date: 2026-09-20
 read_time: true
 share: true
 related: true
 classes: wide
 author_profile: true
-categories: [Linux, Windows, Redes]
+categories: [Linux]
 header:
   teaser: /assets/images/thumbnails/2026-09-20-corrigindo-erros-virtualbox.jpg
 ---
