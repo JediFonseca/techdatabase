@@ -45,7 +45,7 @@ Agora que o sistema possui as ferramentas necessárias, reconfigure o VirtualBox
 sudo /sbin/vboxconfig
 ```
 
-Agora reinicie e teste se tudo está funcionando.
+Reinicie e teste se tudo está funcionando.
 
 ## Problema 02: O conflito com o KVM
 
@@ -58,7 +58,9 @@ Nesse caso, o erro abaixo será exibido:
 
 Se o seu PC tiver um processador da Intel, o erro irá mostrar “kvm_intel”. No print está mostrando “kvm_amd” porque o meu CPU é da AMD.
 
-> **ATENÇÃO:** Os procedimentos abaixo irão adicionar o KVM à blacklist durante a inicialização do sistema. Isso tem um efeito colateral 
+### ATENÇÃO:
+
+Os procedimentos abaixo irão adicionar o KVM à blacklist durante a inicialização do sistema. Isso tem um efeito colateral 
 que pode ser relevante para algumas pessoas, pois outros softwares de virtualização como o GNOME Boxes, Virt-Manager e semelhantes irão parar de funcionar.
 
 Se você precisar desses softwares funcionando junto com o VirtualBox, apenas rode o comando `sudo modprobe -r kvm_amd` para PC’s com CPU da AMD 
