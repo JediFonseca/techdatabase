@@ -2,7 +2,7 @@ title: Tech Database
 description: Base de dados pessoal de informações sobre TI.
 locale: "pt-BR"
 remote_theme: "JediFonseca/minimal-mistakes"
-minimal_mistakes_skin: "dark"
+minimal_mistakes_skin: "catppuccin_mocha"
 search: true
 plugins:
   - jekyll-include-cache
