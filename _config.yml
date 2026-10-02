@@ -1,5 +1,7 @@
 title: Tech Database
 description: Base de dados pessoal de informações sobre TI.
+url: "https://techdatabase.com.br"
+baseurl: ""
 locale: "pt-BR"
 remote_theme: "JediFonseca/minimal-mistakes"
 minimal_mistakes_skin: "catppuccin_mocha"
